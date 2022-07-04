@@ -1,0 +1,1 @@
+/usr/bin/clang++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/TutorialApp.dir/main.cpp.o -o TutorialApp   -L/usr/local/Cellar/glfw/3.3.7/lib  -Wl,-rpath,/usr/local/Cellar/glfw/3.3.7/lib -lglfw -framework OpenGL -framework OpenGL -framework OpenGL 

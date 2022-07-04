@@ -1,0 +1,3 @@
+/Users/danm3/opengl/tutorial1/build/CMakeFiles/TutorialApp.dir
+/Users/danm3/opengl/tutorial1/build/CMakeFiles/edit_cache.dir
+/Users/danm3/opengl/tutorial1/build/CMakeFiles/rebuild_cache.dir
