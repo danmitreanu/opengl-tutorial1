@@ -8,9 +8,9 @@ bool Application::initialize(const char* window_name, std::size_t width, std::si
 		return false;
 
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); 
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	m_Window = glfwCreateWindow(width, height, window_name, NULL, NULL);
 
@@ -49,11 +49,13 @@ void Application::update(const float delta_seconds)
 	std::cout << delta_seconds << std::endl;
 }
 
-void Application::render() {}
+void Application::render()
+{
+}
 
 void Application::key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    Application* handler = reinterpret_cast<Application*>(glfwGetWindowUserPointer(window));
-    if (key == GLFW_KEY_ESCAPE)
-    	glfwSetWindowShouldClose(handler->m_Window, GLFW_TRUE);
+	Application* handler = reinterpret_cast<Application*>(glfwGetWindowUserPointer(window));
+	if (key == GLFW_KEY_ESCAPE)
+		glfwSetWindowShouldClose(handler->m_Window, GLFW_TRUE);
 }

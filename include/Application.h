@@ -29,17 +29,3 @@ private:
 	static void key_callback(GLFWwindow*, int, int, int, int);
 };
 
-//file: main.cpp
-// int main(int argc, const char ** argv)
-// {
-// 	Application a;
-// 	if(a.initialize("demo",800,600))
-// 		return -1;
-	
-// 	a.run();
-// 	return 0;
-// }
-
-//docs:
-// https://www.opengl.org/resources/libraries/glut/spec3/spec3.html
-// https://ogldev.org/www/tutorial01/tutorial01.html
